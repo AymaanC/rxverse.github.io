@@ -37,6 +37,12 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /*extra*/
+
+    --img-bg-shadow: rgba(0, 0, 0, 0.55);
+    --panel-shadow: rgba(255,255, 255, 0.55);
+    --panel-shadow: 0 0 0;
 }
 
 
@@ -62,6 +68,9 @@ body.dark-theme{
     --text-color-lighten: hsl(207, 18%, 8%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36 %);
+    --img-bg-shadow: rgb(255, 255, 255);
+    --panel-shadow: rgba(255,255, 255, 0.55);
+    --panel-shadow: 0 0 5px black;
 }
 
 .nav-btns{
@@ -294,7 +303,8 @@ img {
 }
 
 .home-img{
-	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.55);
+    background-color: #fff;
+	box-shadow: 0 0 5px var(--img-bg-shadow);
     border-radius: 1.5rem;
 	padding: 1rem;
 	width: 100px;
@@ -312,6 +322,7 @@ img {
     column-gap: .5rem;
     zoom: 1.5;
     margin-bottom: 2rem;
+    box-shadow: var(--panel-shadow);
 }
 
 .filters-button{
