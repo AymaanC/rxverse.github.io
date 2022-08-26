@@ -64,3 +64,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+const root = document.querySelector(':root')
+
+function changeColour(h){
+    root.style.setProperty('--hue-color', h)
+    return "Color Changed!"
+}
