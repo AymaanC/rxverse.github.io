@@ -411,9 +411,7 @@ img {
 .filters-section{
     margin-bottom: 2rem;
 }
-
-
-
+        
 @media screen and (max-width: 350px){
     .container{
         margin-left: var(--mb-1);
