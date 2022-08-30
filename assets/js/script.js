@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    typeWriter();
+  });
+
 const navMenu = document.getElementById('nav-menu'), 
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -70,4 +74,16 @@ const root = document.querySelector(':root')
 function changeColour(h){
     root.style.setProperty('--hue-color', h)
     return "Color Changed!"
+}
+
+var i = 0;
+var txt = "I'm a 14 year old intrigued by AI and Technology who's also seemingly obsessed with gaming";
+var speed = 55;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }

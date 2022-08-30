@@ -2,7 +2,7 @@
 
 :root {
     --header-height: 3rem;
-    --hue-color: 180;
+    --hue-color: 140;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -41,8 +41,9 @@
     /*extra*/
 
     --img-bg-shadow: rgba(0, 0, 0, 0.55);
-    --panel-shadow: rgba(255,255, 255, 0.55);
-    --panel-shadow: 0 0 0;
+    --panel-color: var(--text-color-lighten);
+    --panel-hover: var(--body-color);
+    --panel-shadow: none;
 }
 
 
@@ -63,14 +64,15 @@ body.dark-theme{
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color: hsl(240, 11%, 2%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --text-color-lighten: hsl(207, 18%, 8%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36 %);
     --img-bg-shadow: rgb(255, 255, 255);
-    --panel-shadow: rgba(255,255, 255, 0.55);
-    --panel-shadow: 0 0 5px black;
+    --panel-color: hsl(165, 100%, 28%);
+    --panel-hover: hsla(159, 100%, 10%, 0.5);
+    --panel-shadow: 0 0 5px;
 }
 
 .nav-btns{
@@ -314,7 +316,7 @@ img {
 
 .filters-content{
     margin: 2rem 0 0.25rem;
-    background-color: var(--text-color-lighten);
+    background-color:var(--panel-color);
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
@@ -330,7 +332,7 @@ img {
     border: none;
     outline: none;
     padding: 1rem;
-    color: var(--title-color);
+    color: hsl(240, 11%, 2%);
     font-size: var(--medium-font-size); 
     border-radius: .75rem;
     cursor: pointer;
@@ -339,7 +341,7 @@ img {
 }
 
 .filters-button:hover{
-    background-color: var(--body-color);
+    background-color: var(--panel-hover);
 }
 
 .python-card, .blender-card{
