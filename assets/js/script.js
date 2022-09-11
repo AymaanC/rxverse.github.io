@@ -77,7 +77,7 @@ function changeColour(h){
 }
 
 var i = 0;
-var txt = "I'm a 14 year old intrigued by AI and Technology who's also seemingly obsessed with gaming";
+var txt = "I like Artificial Intelligence and Machine Learning";
 var speed = 55;
 
 function typeWriter() {
