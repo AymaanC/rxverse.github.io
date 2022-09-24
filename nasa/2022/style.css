@@ -83,6 +83,7 @@ input:focus{
 
     body{
         zoom: 0.8;
+        -webkit-transform: scale(0.8);
     }
 
 }
@@ -91,6 +92,7 @@ input:focus{
 
     body{
         zoom: 0.7;
+        -webkit-transform: scale(0.7);
     }
 
 }
@@ -99,6 +101,7 @@ input:focus{
 
     body{
         zoom: 0.6;
+        -webkit-transform: scale(0.6);
     }
 
 }
@@ -107,6 +110,7 @@ input:focus{
 
     body{
         zoom: 0.5;
+        -webkit-transform: scale(0.5);
     }
 
 }
