@@ -1,116 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-
-body, html {
-    overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 body{
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #521c81 12%, transparent 12.5%, transparent 87%, #521c81 87.5%, #521c81), linear-gradient(150deg, #521c81 12%, transparent 12.5%, transparent 87%, #521c81 87.5%, #521c81), linear-gradient(30deg, #521c81 12%, transparent 12.5%, transparent 87%, #521c81 87.5%, #521c81), linear-gradient(150deg, #521c81 12%, transparent 12.5%, transparent 87%, #521c81 87.5%, #521c81), linear-gradient(60deg, #521c8177 25%, transparent 25.5%, transparent 75%, #521c8177 75%, #521c8177), linear-gradient(60deg, #521c8177 25%, transparent 25.5%, transparent 75%, #521c8177 75%, #521c8177);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    font-family: 'Cairo', sans-serif
+}
+
+.c1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+    width: 70%;
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    font-family: 'Jost', sans-serif;
-    background-color: #0A2342;
-}
-
-.input-contain{
-    position: relative;
-    margin-bottom: 2%;
-}
-input{
-    height: 5rem;
-    width: 20rem;
-    border: none;
-    box-shadow: 0 9px #E1E4EC;
-    border-radius: 1rem;
-}
-
-.text{
-    font-size: 1.1rem;
-    padding: 0 0.5rem;
-    background-color: transparent;
-    color: black;
-    transform: translate(0);
-}
-
-input{
-    font-size: 1.1rem;
-    padding: 0 1.2rem;
-}
-
-input:focus{
-    outline: none;
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 1.2rem;
-    cursor: pointer;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000;
-    background-color: white;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #E1E4EC;
-}
-  
-.button:active {
-    transform: translateY(4px);
+    font-size: 12px;
+    padding: 0 2rem;
+    margin-top: 2rem;
 }
 
-.prompt{
-    color: white;
-    font-size: 1.3rem;
-    margin-top: .35%;
-}
-
-.image{
-    margin-top: .15%;
-}
-
-.image img{
-    border-radius: 15px;
-}
-
-@media screen and (max-width: 520px){
-
-    body{
-        zoom: 0.8;
-        -webkit-transform: scale(0.8);
-    }
-
-}
-
-@media screen and (max-width: 430px){
-
-    body{
-        zoom: 0.7;
-        -webkit-transform: scale(0.7);
-    }
-
-}
-
-@media screen and (max-width: 370px){
-
-    body{
-        zoom: 0.6;
-        -webkit-transform: scale(0.6);
-    }
-
-}
-
-@media screen and (max-width: 320px){
-
-    body{
-        zoom: 0.5;
-        -webkit-transform: scale(0.5);
-    }
-
+::-webkit-scrollbar{
+    display: none;
 }
